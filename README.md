@@ -11,7 +11,8 @@ Configuração
   
   Em seguida crie/edite o seu arquivo de configuração de log com os seguintes parametros
 
-  &lt;appender name="exportAllNFNREmail" class="LoggerAppenderSMTPMailEvent">
+<code>
+  <appender name="exportAllNFNREmail" class="LoggerAppenderSMTPMailEvent">
   
 	<param name="to" value="destinatario@test.com.br" />
 	
@@ -25,4 +26,5 @@ Configuração
     	
 	<param name="subject" value="Email title" />
 	
-  </appender&gt;
+  </appender>
+</code>
