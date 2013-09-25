@@ -11,22 +11,20 @@ Configuração
   
   Em seguida crie/edite o seu arquivo de configuração de log com os seguintes parametros
 
-  &lt;appender name="exportAllNFNREmail" class="LoggerAppenderSMTPMailEvent"&gt;
+&lt;
+  <appender name="exportAllNFNREmail" class="LoggerAppenderSMTPMailEvent">
   
-    	&lt;layout class='XXX'&gt;
+	<param name="to" value="destinatario@test.com.br" />
   
-    	&lt;/layout&gt;
-
-	&lt;param name="to" value="destinatario@test.com.br" /&gt;
+    	<param name="smtpHost" value="smtp.test.com.br"/>
   
-    	&lt;param name="smtpHost" value="smtp.test.com.br"/&gt;
+    	<param name="from" value="remetente@test.com.br"/>
   
-    	&lt;param name="from" value="remetente@test.com.br"/&gt;
+    	<param name='username' value='remetente@test.com.br' />
   
-    	&lt;param name='username' value='remetente@test.com.br' /&gt;
+    	<param name='password' value='your_password' />
+	
+	<param name="subject" value="Email title" />
   
-    	&lt;param name='password' value='your_password' /&gt;
-
-	&lt;param name="subject" value="Email title" /&gt;
-  
-  &lt;/appender&gt;
+  </appender>
+&gt;
