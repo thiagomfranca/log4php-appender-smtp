@@ -1,7 +1,7 @@
 AppenderSMTPMailEvent para apache log4php
 =====================
 
-  Envie logs atráves de SMTP autenticado
+  Envie logs por email atráves de SMTP autenticado
 
 
 Configuração
@@ -11,7 +11,7 @@ Configuração
   
   Em seguida crie/edite o seu arquivo de configuração de log com os seguintes parametros
 
-  	<appender name="exportAllNFNREmail" class="LoggerAppenderSMTPMailEvent">
+  	<appender name="ID_DO_SEU_APPENDER" class="LoggerAppenderSMTPMailEvent">
 		<param name="to" value="destinatario@test.com.br" />
 		<param name="smtpHost" value="smtp.test.com.br"/>
 		<param name="from" value="remetente@test.com.br"/>
